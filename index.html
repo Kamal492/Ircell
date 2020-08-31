@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outbound diaries</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+  <nav >
+    <div class="logo-div">
+      <img src="logo.png" alt="logo" class="logo">
+      <div class="logo-nam">
+        <h2>INTERNATIONAL RELATIONS</h2>
+        <h3>IIT KHARAGPUR</h3>
+      </div>
+    </div>
+    <div class="dropdown-quick">
+      <button class="quick" id="down-1" onclick="change_QL(this.id)">Quick Link <i class="fa fa-caret-down" id="down-1-icon" aria-hidden="true"></i></button>
+      <div class="content-1" id="down-1-content">
+        <span class="down-1-cross" onclick="close_dropdown('down-1-content')">&times</span>
+        <a href="">Mou</a>
+        <a href="">How to apply</a>
+        <a href="">Contact</a>
+        <a href="">OIR login</a>
+        <a href="">IITKGP website</a>
+        <a href="">Exchange Diaries</a>
+        <a href="">Payment</a>
+
+      </div>
+    </div>
+
+  </nav>
+  <section class="link-sec">
+    <div class='dropdown'>
+      <div class="btn-group">
+  <button type="button" class="btn link-main dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    IITKGP Faculty
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn link-main dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    IITKGP Students
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn link-main dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    International students
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn link-main dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    International faculty
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn link-main dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Partners
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn link-main dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Publications
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn link-main dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Contact us
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+
+</div>
+    </div>
+    <!--<div style="margin:auto;width:98%;text-align:center;">
+      <a href="" id="link-1" class="link-main" onmouseover="show_dd(this.id)">IITKGP Faculty <i class="fa fa-caret-down" id="down-1-icon" aria-hidden="true"></i></a>
+      <div class="link-content" id="link-1-content">
+        <a href="">Internal</a>
+      </div>
+      <a href="" id="link-2" class="link-main" onmouseover="show_dd(this.id)">IITKGP Students <i class="fa fa-caret-down" id="down-1-icon" aria-hidden="true"></i></a>
+      <div class="link-content" id="link-2-content">
+        <a href="">Programmes</a>
+        <a href="">Funding</a>
+        <a href="">Reasearch Internship Portal</a>
+        <a href="">Opportunities</a>
+        <a href="">Exchabge diaries</a>
+      </div>
+      <a href="" id="link-3" class="link-main" onmouseover="show_dd(this.id)">International Students <i class="fa fa-caret-down" id="down-1-icon" aria-hidden="true"></i></a>
+      <div class="link-content" id="link-3-content">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+      </div>
+      <a href="" id="link-4" class="link-main" onmouseover="show_dd(this.id)">International Faculty <i class="fa fa-caret-down" id="down-1-icon" aria-hidden="true"></i></a>
+      <div class="link-content" id="link-4-content">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+      </div>
+      <a href="" id="link-5" class="link-main" onmouseover="show_dd(this.id)">Partners <i class="fa fa-caret-down" id="down-1-icon" aria-hidden="true"></i></a>
+      <div class="link-content" id="link-5-content">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+      </div>
+      <a href="" id="link-6"  class="link-main" onmouseover="show_dd(this.id)">Publications <i class="fa fa-caret-down" id="down-1-icon" aria-hidden="true"></i></a>
+      <div class="link-content" id="link-6-content">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+      </div>
+      <a href="" class="link-main">Forever KGPian</a>
+      <a href="" id="link-7" class="link-main" onmouseover="show_dd(this.id)">Contact us <i class="fa fa-caret-down" id="down-1-icon" aria-hidden="true"></i></a>
+      <div class="link-content" id="link-7-content">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+      </div>
+    </div>-->
+
+  </section>
+  <section class="sidebar">
+    <ul class="year">
+      <li class="active-year">2019</li>
+      <li>2018</li>
+      <li>2017</li>
+      <li>2016</li>
+    </ul>
+    <ul>
+      <li>Inbound Diaries</li>
+      <li>SGRIP</li>
+      <li>GIAN</li>
+      <li>Dual Doctorate Programme</li>
+    </ul>
+  </section>
+<div class="right-bar">
+  <div style="text-align:center;">
+    <h1>Outbound Diaries<span style="font-size:1.2rem;"> 2019</span> </h1>
+  </div>
+
+  <div class="profile-list">
+    <div class="profile">
+      <img src="https://international.iitkgp.ac.in/media/anuj.jpg" alt="profile">
+      <h3>Anuj Daga | Architecture and Regional Planning</h3>
+      <h4>Laval University, Canada</h4>
+      <h4>Research Area: Big Data Analytics</h4>
+      <h4>Duration: 2 Months</h4>
+      <button class="profile-btn">Read more</button>
+    </div>
+    <div class="profile">
+      <img src="https://international.iitkgp.ac.in/media/anuj.jpg" alt="profile">
+      <h3>Anuj Daga | Architecture and Regional Planning</h3>
+      <h4>Laval University, Canada</h4>
+      <h4>Research Area: Big Data Analytics</h4>
+      <h4>Duration: 2 Months</h4>
+      <button class="profile-btn">Read more</button>
+    </div>
+    <div class="profile">
+      <img src="https://international.iitkgp.ac.in/media/anuj.jpg" alt="profile">
+      <h3>Anuj Daga | Architecture and Regional Planning</h3>
+      <h4>Laval University, Canada</h4>
+      <h4>Research Area: Big Data Analytics</h4>
+      <h4>Duration: 2 Months</h4>
+      <button class="profile-btn">Read more</button>
+    </div>
+  </div>
+
+</div>
+  <script>
+    function change_QL(x){
+     document.getElementById(x +'-icon').classList.remove("fa-caret-down");
+     document.getElementById(x +'-icon').classList.add("fa-caret-up");
+     document.getElementById(x +'-content').style.display="block";
+    }
+    function close_dropdown(y){
+      document.getElementById(y).style.display="none";
+      document.getElementById('down-1-icon').classList.remove("fa-caret-up");
+      document.getElementById('down-1-icon').classList.add("fa-caret-down");
+
+    }
+
+
+  </script>
+  </body>
+</html>
